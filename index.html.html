@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<html>
-</head>
-    <title>hello</title>
-    <style>
-        h2{
-            font-family: monospace;
-            color:coral;
-            line-height: 3;
-        }
-    </style>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hello</title>
+  <style>
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPH31WBizVLQXw62YXJyKXnDUxCFxJ-2cA4Bw9vwnOYkQwAf2l8VzWhLH_7F6Bu9MySfQ&usqp=CAU');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    /* 标题区域 */
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+    /* 中文标题样式 */
+    .chinese {
+      color: rgba(255, 245, 245, 0.69);
+    }
+    /* 数字样式 */
+    .number {
+      color: rgba(240, 9, 9, 0.69);
+    }
+    /* 英文标题样式 */
+    .english {
+      color: rgba(240, 9, 9, 0.69);
+      margin-top: 10px;
+    }
+    p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    p.red {
+      color: #ff4c4c;
+    }
+    p.gold {
+      color: #ffd700;
+    }
+    p.maroon {
+      color: #800000;
+    }
+  </style>
 </head>
 <body>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPH31WBizVLQXw62YXJyKXnDUxCFxJ-2cA4Bw9vwnOYkQwAf2l8VzWhLH_7F6Bu9MySfQ&usqp=CAU"   />
-    <h1>Bobas</h1>
-    <p style="color:red;">我要玩第五人格!</p>
-    <p style="color: gold;">我要玩第五人格!</p>
-    <p style="color: maroon;">我要玩第五人格!</p>
-    <p style="color: black;">我要玩第五人格1234!</p>
-    <h2>Heading 2 test</h2>
-    <h2>Heading 2 second</h2>
+  <div class="title">
+    <!-- 第一行：中文标题“第5人格” -->
+    <div class="chinese">第<span class="number">5</span>人格</div>
+    <!-- 第二行：英文标题 -->
+    <div class="english">identity V</div>
+  </div>
+  <p class="red">我要玩第五人格!</p>
+  <p class="gold">我要玩第五人格!</p>
 </body>
+</html>
